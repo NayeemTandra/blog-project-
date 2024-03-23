@@ -1,0 +1,524 @@
+/*reset  and commen codes*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-weight: 200;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-whight{
+    color: azure;
+}
+
+html{
+    background-color: rgb(221, 221, 221);
+    scroll-behavior: smooth;
+    font-size: 75%;
+    font-family: "Madimi One",sans-serif;
+}
+
+body{
+    background-color:rgb(200, 234, 240) ;
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+}
+.section--center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section--heading{
+    background-color: rgb(159, 221, 206);
+    display: inline-block;
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    padding: 1rem;
+    border-radius: 1rem 3rem;
+    box-shadow: .6rem .6rem .6rem rgb(1, 56, 11),
+    .6rem .6rem .6rem  rgb(6, 39, 28);
+   
+
+}
+
+.bnt{
+    background-color: rgb(49, 131, 127);
+    padding: .6rem;
+    border: none;
+    font-size: 1.3rem;
+    
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*reset  and commen codes*/
+
+
+
+/*header started here*/
+.logo{
+    border:6px solid black ;
+    font-size: 15rem;
+}
+
+
+header{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 82, 53);
+    padding: 1rem 2rem;
+    
+    top: 0;
+    min-height: 5vh;
+    z-index:10 ;
+    box-shadow: .8rem .8rem .6rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+   
+}
+
+nav ul li{
+    padding: 1rem;
+    transition: all .1s linear;
+}
+
+nav ul li:hover{
+    background-color: rgb(108, 191, 216);
+    border-radius: 3rem;
+    transform: scale(1.2);
+
+
+}
+
+.nav__link{
+    color: rgb(5, 7, 6);
+    padding: 1rem;
+}
+
+#menu--icon{
+    display: none;
+}
+/*header end here*/
+
+/* responsives start here */
+@media screen and (max-width:992px){
+   
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 55.5%;
+       
+    }
+    
+     .banner{
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+.cards{
+    width: 80%;
+}
+
+
+.blog--post{
+    flex-direction: column;
+    width: 80%;
+    
+}
+#contact-section{
+    min-height: auto;
+    
+} 
+
+
+
+.archieves--container{
+    width: 70%;
+}
+
+#archieves{
+    min-height: auto;
+}
+
+}
+
+@media screen and (max-width:660px){
+    header{
+        flex-direction: column;
+       
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        /* margin-left: 1.5rem; */
+    }
+    .cards{
+        flex-direction: column;
+        width: 90%;
+        min-height: auto;
+    }
+
+    .card--body .card--discription{
+        font-size: 1.6rem;
+    }
+
+    div ul{
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: auto;
+
+    }
+
+    .blog--post{
+        width: 100%;
+    }
+
+    .archieves__lists{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80%;
+    }
+    #contact-section{
+        width: 100%;
+        flex-direction: column;
+    } 
+
+    .form--contact{
+        flex-direction: column;
+    }
+
+    .form--contact> label{
+        margin-bottom: 2rem;
+
+    }
+
+    .form--contacts{
+        width: 80%;
+    }
+
+    .footer--section{
+        flex-direction: column;
+    }
+    .footer__link{
+        font-size: 5rem;
+    }
+    #menu--icon{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+}
+/* responsives end here */
+
+
+/* banner section starte here */
+
+.banner{
+    display: flex;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    }
+
+    .banner aside{
+        flex-basis: 50%;
+        text-align: center;
+    } 
+    
+.banner__image{
+    width: 50rem;
+    height: 50rem;
+    /* border: .1rem solid; */
+     box-shadow: .3rem .3rem .4rem,
+    -.3rem -.3rem .4rem ;
+}
+
+.banner-heading{
+    background-color: rgb(3, 82, 53);
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem 3rem ;
+    box-shadow: .6rem .6rem .6rem rgb(145, 189, 197),
+    .6rem .6rem .6rem  rgb(62, 105, 90);
+}
+ 
+    
+.banner-article{
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.banner__discription{
+    font-size: large;
+}
+/* banner section end here */
+
+
+
+/* about section started here */
+#blog-about{
+    background-color: rgb(3, 82, 53);
+}
+
+.cards{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color:rgb(200, 234, 240) ;
+    padding:3rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    text-align: center;
+    border-radius: 3rem 2rem;
+    box-shadow: .6rem .6rem .6rem rgb(1, 56, 11),
+    .6rem .6rem .6rem  rgb(6, 39, 28);
+}
+
+.card--title{
+    font-size: 2rem;
+}
+
+.card--discription{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about__cards--bnt{
+    box-shadow: .3rem .3rem .3rem  rgb(192, 226, 38),
+    .6rem .6rem .6rem   rgb(192, 226, 38);
+    border-radius: 3rem;
+}
+.card--title{
+    background-color: rgb(139, 196, 204) ;
+    padding: 1rem;
+    border-radius: 1rem 2rem 1rem;
+}
+.card--title:hover{
+    background-color: rgb(47, 165, 43);
+}
+.card:hover{
+    background-color: rgb(192, 226, 38) ;
+}
+/* about section ebd here */
+
+
+/* archieves section started here */
+
+
+
+.archieves--container{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: .3rem solid;
+    border-top: .3rem solid;
+}
+
+.archieves__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    transition: all .3s linear;
+    
+}
+
+.archieves__img:hover{
+
+    transform: scale(1.1);
+
+}
+
+.archieves__lists{
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+}
+
+/* archieves section end here */
+
+/* blog post section started here */
+
+.blog--posts{
+    gap: 2rem;
+    
+}
+#blog--posts{
+    min-height: 65vh;
+}
+
+
+.blog--post{
+    display: flex;
+    width: 70%;
+    transition: all .3s linear;
+    border: .1rem solid;
+    margin-bottom: 1rem;
+    
+}
+
+.blog--post:hover{
+    transform: scale(1.1);
+}
+
+.blog--post__aside{
+    flex: 1;
+}
+
+.blog--post__content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.blog--post__bnt{
+    width: 30%;
+    border-radius: 1rem 1rem;
+    font-size: large;
+
+}
+.blog--post__heading{
+    align-items: center;
+    font-size: 1.9rem;
+}
+
+.blog--post__sub{
+    font-size: 1.6rem;
+}
+
+.blog--post__discription{
+    font-size: 1.2rem;
+    text-align: justify
+}
+
+/* blog post section started here */
+
+
+/* contact  section started here */
+#contact-section{
+    background-color: rgb(150, 188, 195);
+    min-height: 50vh;
+}
+.form--contact{
+   margin-bottom: 1.6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.form--contact label{
+    font-size: 1.6rem;
+    flex: .3;
+}
+
+.form--contact> input textarea{
+    width: 30rem;
+    padding: .6rem;
+    border: none;
+    border-radius: 1rem;
+    flex: .7;
+}
+textarea{
+    resize: none;
+    height: 10vh;
+}
+
+.form-bnt__fild__bnt{
+    display: flex;
+    justify-content:end;
+}
+
+.form__bnt{
+   
+    width: 30%;
+    border-radius: 1rem  1rem;
+    
+}
+
+/* contact  section end here */
+
+/* footer stared here  */
+
+.footer--section{
+    display: flex;
+    gap:  4rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 82, 53);
+}
+
+.footer__link{
+    color: black;
+    padding: 2rem;
+    transition: all .1s linear;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.footer__nav{
+    font-size: 2rem;
+    
+}
+
+.footer__link:hover{
+    color: rgb(108, 191, 216);
+    border-radius: 1rem;
+    transform: scale(1.6);
+}
+
+.copy__text{
+    font-size: 2rem;
+}
+
+
+
+
+
+/* footer end here  */
+
